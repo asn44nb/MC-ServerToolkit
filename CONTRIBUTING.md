@@ -20,8 +20,8 @@ Katkılar memnuniyetle karşılanır; ancak belirli kurallar vardır. Amaç kali
 
 - Yeni sistemler rastgele klasör açılarak eklenmez.  
 - Mevcut yapı takip edilmelidir:  
-  - `Permissions/` → yetki ve rol sistemleri  
-  - `DataPacks/` → bağımsız veya modüler datapack bileşenleri  
+  - `datapack.zip` → bağımsız veya modüler datapack bileşenleri (ZIP)  
+  - `datapack` → bağımsız veya modüler datapack bileşenleri  
 - Ortak kullanılan fonksiyonlar mümkünse merkezi bir alanda tutulur.
 
 ## Test Zorunluluğu
