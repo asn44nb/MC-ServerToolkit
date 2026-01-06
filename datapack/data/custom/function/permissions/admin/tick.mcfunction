@@ -26,10 +26,6 @@ scoreboard players set @a[scores={ap_toggle_night=1..}] ap_toggle_night 0
 execute as @a[scores={ap_lp_menu=1..}] run function custom:lp/menu
 scoreboard players set @a[scores={ap_lp_menu=1..}] ap_lp_menu 0
 
-scoreboard players enable @a[tag=1] ap_give_tools
-scoreboard players enable @a[tag=1] ap_creative
-scoreboard players enable @a[tag=1] ap_main_menu
-
 execute as @a[scores={ap_creative=1..}] run gamemode creative @s
 scoreboard players set @a[scores={ap_creative=1..}] ap_creative 0
 
@@ -37,7 +33,7 @@ execute as @a[scores={ap_main_menu=1..}] run function custom:menu/open
 scoreboard players set @a[scores={ap_main_menu=1..}] ap_main_menu 0
 
 execute as @a[scores={ap_starter_pack=1..}] run function custom:starter_pack
-scoreboard players set @a[scores={ap_starter_pack=1..}] ap_main_menu 0
+scoreboard players set @a[scores={ap_starter_pack=1..}] ap_starter_pack 0
 
 execute as @a[scores={ap_homeGUI=1..}] run dialog show @s {type:"minecraft:multi_action",title:"",inputs:[{type:"minecraft:number_range",key:"id",label:"ID",start:0,end:100,step:1,initial:50}],can_close_with_escape:1b,pause:0b,after_action:"close",columns:2,actions:[{label:"Ev'e Git",action:{type:"minecraft:dynamic/run_command",template:"/function admin:commands/home {id:\"$(id)\"}"}},{label:"Ev Ayarla",action:{type:"minecraft:dynamic/run_command",template:"/function admin:commands/sethome {id:\"$(id)\"}"}},{label:"Ev'i Sil",action:{type:"minecraft:dynamic/run_command",template:"/function admin:commands/delhome {id:\"$(id)\"}"}}]}
 scoreboard players set @a[scores={ap_homeGUI=1..}] ap_homeGUI 0
