@@ -35,7 +35,7 @@ scoreboard players set @a[scores={ap_main_menu=1..}] ap_main_menu 0
 execute as @a[scores={ap_starter_pack=1..}] run function custom:starter_pack
 scoreboard players set @a[scores={ap_starter_pack=1..}] ap_starter_pack 0
 
-execute as @a[scores={ap_homeGUI=1..}] run dialog show @s {type:"minecraft:multi_action",title:"",inputs:[{type:"minecraft:number_range",key:"id",label:"ID",start:0,end:100,step:1,initial:50}],can_close_with_escape:1b,pause:0b,after_action:"close",columns:2,actions:[{label:"Ev'e Git",action:{type:"minecraft:dynamic/run_command",template:"/function admin:commands/home {id:\"$(id)\"}"}},{label:"Ev Ayarla",action:{type:"minecraft:dynamic/run_command",template:"/function admin:commands/sethome {id:\"$(id)\"}"}},{label:"Ev'i Sil",action:{type:"minecraft:dynamic/run_command",template:"/function admin:commands/delhome {id:\"$(id)\"}"}}]}
+execute as @a[scores={ap_homeGUI=1..}] run dialog show @s custom:home
 scoreboard players set @a[scores={ap_homeGUI=1..}] ap_homeGUI 0
 
 execute as @a[scores={ap_fill_area=1..}] at @s run function custom:permissions/builder/actions/fill_gui
