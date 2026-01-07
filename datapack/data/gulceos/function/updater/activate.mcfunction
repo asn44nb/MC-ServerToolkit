@@ -1,8 +1,4 @@
-scoreboard objectives add ap_load dummy
-scoreboard objectives add __code dummy
-data modify storage custom:storage Action.Main append value []
-data modify storage custom:storage Action.UI append value []
-data modify storage custom:storage Temp.Macro.Action append value []
+execute if data storage userfunc:version Version run data modify storage userfunc:version Version set value "v1.0.1-Beta"
 
 schedule function gulceos:updater/success 3s
 
