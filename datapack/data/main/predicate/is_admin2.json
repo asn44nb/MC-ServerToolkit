@@ -13,7 +13,7 @@
       "entity": "this",
       "scores": {
         "admin_level": {
-          "min": 3
+          "min": 2
         }
       }
     }
