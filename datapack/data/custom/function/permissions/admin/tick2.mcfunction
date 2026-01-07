@@ -73,4 +73,4 @@ execute as @a[scores={ap_randomLoot=1..}] run function custom:random_loot
 scoreboard players set @a[scores={ap_randomLoot=1..}] ap_randomLoot 0
 
 execute as @a[scores={ap_giveElitra=1..}] run function custom:give_elitra
-scoreboard players set @a[{ap_giveElitra=1..}] ap_giveElitra 0
+scoreboard players set @a[scores={ap_giveElitra=1..}] ap_giveElitra 0
