@@ -43,5 +43,6 @@ scoreboard objectives add ap_permissions trigger
 scoreboard objectives add ap_test trigger
 scoreboard objectives add ap_randomLoot trigger
 scoreboard objectives add ap_giveElitra trigger
+scoreboard objectives add admin_level dummy
 
 schedule function custom_admin:load2 2t replace
